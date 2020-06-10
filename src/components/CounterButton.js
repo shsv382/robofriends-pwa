@@ -8,7 +8,7 @@ class CounterButton extends Component {
 
   shouldComponentUpdate(nextProps, nextState) {
     if (this.state.count !== nextState.count) {
-      return true;
+         return true;
     }
     return false;
   }
@@ -17,9 +17,9 @@ class CounterButton extends Component {
     return (
       <button
         color={this.props.color}
-        id="counter"
+          id="counter"
         onClick={() => this.setState(state => ({count: state.count + 1}))}>
-        Count: {this.state.count}
+             Count: {this.state.count}
       </button>
     );
   }
